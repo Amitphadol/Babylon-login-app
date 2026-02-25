@@ -24,7 +24,7 @@ Make sure you have the following installed before getting started:
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/babylon-login-app.git
+git clone https://github.com/Amitphadol/Babylon-login-app.git
 cd babylon-login-app
 ```
 
@@ -81,7 +81,7 @@ NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
 NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
 ```
 
-> ⚠️ Never commit `.env.local` to version control. It is already listed in `.gitignore`.
+> Never commit `.env.local` to version control. It is already listed in `.gitignore`.
 
 ---
 
@@ -149,26 +149,3 @@ Authentication is handled entirely through Firebase's client SDK. On registratio
 - **Error code mapping** — Firebase returns internal error codes (e.g. `auth/wrong-password`) that need to be translated into user-friendly messages.
 
 ---
-
-## Improvements with More Time
-
-- Add a global `AuthContext` with React Context so auth state is accessible app-wide without repeated `onAuthStateChanged` calls
-- Middleware-based route protection using Next.js `middleware.ts` for server-side redirects
-- Form validation with [Zod](https://zod.dev/) for schema-based field rules
-- Toast notifications for success/error feedback
-- Password visibility toggle on the password field
-- Unit and integration tests with Jest and React Testing Library
-- Deployment to Vercel with production environment variables
-
----
-
-## Deployment (Optional)
-
-To deploy to [Vercel](https://vercel.com/):
-
-1. Push your repository to GitHub
-2. Import the project on Vercel
-3. Add your Firebase environment variables under **Project Settings → Environment Variables**
-4. Deploy — Vercel will handle the build automatically
-
-Live URL: _coming soon_
